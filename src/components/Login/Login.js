@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import "./Login.css";
 import { AuthContext } from "../Context/AuthContext";
+import { Redirect } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -34,7 +35,7 @@ const Login = () => {
 
   return (
     <div>
-      {status === false && (
+      {status === false ? (
         <>
           <h3>Login Page</h3>
           <form onSubmit={handleSubmit}>
@@ -60,7 +61,7 @@ const Login = () => {
             </div>
           </form>
         </>
-      )}
+      ) : <Redirect to="/" />}
     </div>
   );
 };
