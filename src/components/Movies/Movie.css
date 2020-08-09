@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: #dad6d6a6;
+  margin: 15px 10px;
+  border-radius: 20px;
+}
+
+.card li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.9);
+  transition: 0.8s;
+}
+
+.movie-detail {
+  font-size: small;
+}
+
+
+.action {
+  display: inline-block;
+  justify-content: center;
+}
+
+.btn {
+  border : none;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.edit {
+  background-color: yellow;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.input {
+  display: inline;
+  vertical-align: middle;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 12px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,43 @@
+nav {
+  background: rgb(172, 252, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(172, 252, 255, 1) 0%,
+    rgba(232, 130, 0, 1) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  margin: 0px;
+  padding: 3px;
+  font-weight: bold;
+  align-self: center;
+}
+.logo:hover {
+  color: cadetblue;
+}
+
+.nav-links {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.link {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: cadetblue;
+  font-weight: bold;
+  animation: ease-in;
+}
